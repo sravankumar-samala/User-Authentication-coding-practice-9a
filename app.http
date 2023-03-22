@@ -1,0 +1,30 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "Sravan_Kumar",
+  "name": "Sravan Kumar Samala",
+  "password": "Sravan@020",
+  "gender": "male",
+  "location": "Hyderabad"
+}
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "Sravan_Kumar",
+  "password": "Sravan@020"
+}
+###
+
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "Sravan_Kumar",
+  "oldPassword": "Sravan@020",
+  "newPassword": "Sravan@20"
+}
+
